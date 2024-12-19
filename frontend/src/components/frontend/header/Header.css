@@ -1,0 +1,55 @@
+
+
+/* Navbar */
+.navbar {
+  display : flex;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+} 
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000; 
+  height: 5rem;
+  font-weight: 5rem;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  align-content: space-between;
+  list-style: none;
+  justify-content: center; 
+  align-items: center;     
+  gap: 2rem;
+  margin: 0;
+  padding: 0;             
+  
+  border-radius: 10px;     
+  
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;            
+  font-size: 1rem;
+  
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  background-color: #9AA6B2; 
+  color: #fff;               
+  border-radius: 5px;
+}
+
+

@@ -1,0 +1,93 @@
+/* Container for the whole welcome section */
+.welcome-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  .photo1{
+  
+    display: flex;
+    
+    width: 100%;
+    height: 50%;
+
+  
+    background-color: #f4f4f4;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  
+  
+  }
+
+
+  /* Style pour le conteneur */
+  .description {
+    display: flex;
+    gap: 20px;              /* Space between paragraph and photo */
+    align-items: center;    /* Vertically align items */
+    justify-content: center;/* Center items horizontally */
+    width: 100%;            /* Make the div take full width of the page */
+    padding: 20px;          /* Add padding for spacing */
+    box-sizing: border-box; /* Coins arrondis */
+}
+
+/* Style pour le paragraphe */
+.description p {
+  font-size: 1.2rem;
+  color: #333;           /* Dark text color */
+  line-height: 1.6;      /* Improve readability */
+  flex: 1;               /* Allow the paragraph to take available space */
+  margin: 0;      /* Coins arrondis */
+}
+
+/* Style pour la photo */
+.photoDes {
+  width: 250px;          /* Set a fixed width for the image */
+  height: auto;          /* Maintain the image proportions */
+  transition: transform 0.3s ease, opacity 0.3s ease;/* Ombre douce */
+}
+.photoDes:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+  opacity: 0.8;         /* Reduce opacity on hover */
+}
+
+
+
+
+
+
+
+
+ 
+  
+  /* Image gallery styling */
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  /* Animation effect */
+  .image-gallery .image.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Optional: Adding a hover effect on the images */
+  .image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
